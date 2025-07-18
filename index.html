@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gülendam – Sesli Çeviri (Demo)</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col items-center justify-center min-h-screen p-6">
+  <div class="w-full max-w-md space-y-4">
+    <h1 class="text-2xl font-bold text-center">👵 Gülendam – Türkçe ↔ Almanca Çeviri</h1>
+    <p class="text-center text-sm text-gray-600">API anahtarını gir ve demo'yu deneriz.</p>
+
+    <input id="api-key" type="password" placeholder="sk-..." class="w-full p-2 rounded border border-gray-300" />
+
+    <div class="grid grid-cols-2 gap-4">
+      <button id="start-tr" class="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">Türkçe Konuş</button>
+      <button id="start-de" class="bg-green-600 hover:bg-green-700 text-white py-2 rounded">Deutsch Sprechen</button>
+    </div>
+
+    <div class="bg-white p-4 rounded shadow space-y-2">
+      <div><strong>🎙️ Tanınan:</strong><p id="recognized-text" class="italic text-gray-700"></p></div>
+      <div><strong>🔊 Gülendam:</strong><p id="translated-text" class="italic text-gray-900"></p></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
