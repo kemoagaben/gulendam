@@ -1,4 +1,4 @@
-# Gulendam - Sesli Çeviri Demısu
+# Gulendam - Sesli Çeviri Demosu
 
 Bu proje, sesli çeviri yeteneklerini gösteren bir HTML/JavaScript uygulamasıdır.
 
